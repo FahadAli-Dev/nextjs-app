@@ -1,4 +1,12 @@
 @import "tailwindcss";
-body {
+
+h1 {
   text-align: center;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+p {
+  max-width: 900px;
+  margin: auto;
 }
