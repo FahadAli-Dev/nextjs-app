@@ -1,15 +1,27 @@
-import data from "../../data/blogsData.json";
+import blogsData from "../../data/blogsData.json";
+import Link from "next/link";
+import comments_data from "../../data/comments_data.json";
 
 async function BlogsDetail({ params }) {
   let { BlogsDetail } = await params;
-  let currentData = data.filter((v) => v.id == BlogsDetail)[0];
+  let currId = BlogsDetail.replace("blogsdetail", "");
+  let currentData = blogsData.filter((v) => v.id == currId)[0];
+  let currComment = comments_data.filter((v) => v.id == currentData.id)[0];
 
   return (
-    <div>
-      <h2 className="w-[900px] m-[20px_auto_10px_auto] font-bold text-[20px]">
+    <div className="w-[900px] mx-auto grid grid-cols-1 gap-[10px] mt-[20px]">
+      <h2 className="font-bold text-[30px]">Blog Detail</h2>
+      <h2 className=" font-bold text-[20px]">
         {currentData.id}.{currentData.title}
       </h2>
       <p>{currentData.body}</p>
+      <div>
+        <Link href={`/blogs/${currentData.url}/${currComment.title}`}>
+          <button className="bg-blue-500 text-white p-[5px_10px] rounded-[4px]">
+            Read Comment
+          </button>
+        </Link>
+      </div>
     </div>
   );
 }

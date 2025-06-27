@@ -1,12 +1,11 @@
 import React from "react";
-import data from "../data/blogsData.json";
+import blogsData from "../data/blogsData.json";
 import Link from "next/link";
-import BlogsDetail from "./[BlogsDetail]/page";
 
 function Blogs() {
   return (
     <div className="grid grid-cols-4 gap-[40px] w-[1300px] mx-auto mt-[40px] mb-[100px]">
-      {data.map((item, idx) => {
+      {blogsData.map((item, idx) => {
         return <Card item={item} key={idx} />;
       })}
     </div>
@@ -20,7 +19,7 @@ const Card = ({ item }) => {
     <div id="card" className="shadow-lg p-[30px] flex flex-col gap-[20px]">
       <h2>{item.title}</h2>
       <p>{item.body}</p>
-      <Link href={`/blogs/${item.id}`}>
+      <Link href={`/blogs/${item.url}`}>
         <button className="bg-blue-600 text-white p-[2px_15px] rounded-[5px] cursor-pointer">
           Detail
         </button>
