@@ -6,7 +6,7 @@ function Navbar() {
     <header className="bg-black text-white p-[20px]">
       <ul className="flex justify-center gap-[20px] font-[600]">
         <li>
-          <Link href="/">Home</Link>
+          <Link href="/user">Home</Link>
         </li>
         <li>
           <Link href="/about">About</Link>
