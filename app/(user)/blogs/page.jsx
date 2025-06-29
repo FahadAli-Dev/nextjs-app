@@ -20,7 +20,7 @@ const Card = ({ item }) => {
       <h2>{item.title}</h2>
       <p>{item.body}</p>
       <Link href={`/blogs/${item.url}`}>
-        <button className="bg-blue-600 text-white p-[2px_15px] rounded-[5px] cursor-pointer">
+        <button className="bg-blue-600 font-semibold text-white p-[7px_20px] rounded-[5px] cursor-pointer">
           Detail
         </button>
       </Link>

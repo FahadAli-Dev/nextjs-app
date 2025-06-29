@@ -17,7 +17,7 @@ async function BlogsDetail({ params }) {
       <p>{currentData.body}</p>
       <div>
         <Link href={`/blogs/${currentData.url}/${currComment.title}`}>
-          <button className="bg-blue-500 text-white p-[5px_10px] rounded-[4px]">
+          <button className="bg-blue-500 text-white p-[10px_25px] font-semibold rounded-[5px]">
             Read Comment
           </button>
         </Link>

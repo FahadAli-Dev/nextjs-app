@@ -24,7 +24,7 @@ const About = () => {
 
       <div className="text-center mt-[30px]">
         <Link href="/about/team">
-          <button className="bg-blue-600 text-white font-semibold p-[3px_15px] rounded-[6px] ">
+          <button className="bg-blue-600 text-white font-semibold p-[10px_25px] rounded-[6px] ">
             Our Team
           </button>
         </Link>

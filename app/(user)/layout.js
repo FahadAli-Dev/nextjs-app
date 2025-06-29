@@ -1,14 +1,11 @@
-import Navbar from "./components/Navbar";
-import "../globals.css";
+import Navbar from "../components/UserNavbar";
 
 const RootLayout = ({ children }) => {
   return (
-    <html lang="en">
-      <body>
-        <Navbar />
-        {children}
-      </body>
-    </html>
+    <>
+      <Navbar />
+      {children}
+    </>
   );
 };
 

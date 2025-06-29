@@ -1,14 +1,12 @@
-import Navbar from "./components/Navbar.jsx";
+import Navbar from "../components/AdminNavbar";
 import "../globals.css";
 
 function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
-        <Navbar />
-        {children}
-      </body>
-    </html>
+    <>
+      <Navbar />
+      {children}
+    </>
   );
 }
 
