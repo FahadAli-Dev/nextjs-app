@@ -7,7 +7,8 @@ const Navbar = () => {
         <Link href={"/"}>Home</Link>
         <Link href={"/servercomp"}>ServerComp</Link>
         <Link href={"/clientcomponent"}>ClientComp</Link>
-        <Link href={"/practice"}>Practice</Link>
+        <Link href={"/useapipractice"}>use</Link>
+        <Link href={"/blogs"}>Blogs(use)</Link>
       </ul>
     </div>
   );
